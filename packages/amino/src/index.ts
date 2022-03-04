@@ -11,6 +11,7 @@ export {
   encodeAminoPubkey,
   encodeBech32Pubkey,
   encodeEd25519Pubkey,
+  encodeEthSecp256k1Pubkey,
   encodeSecp256k1Pubkey,
 } from "./encoding";
 export { createMultisigThresholdPubkey } from "./multisig";
@@ -18,7 +19,9 @@ export { omitDefault } from "./omitdefault";
 export { makeCosmoshubPath } from "./paths";
 export {
   Ed25519Pubkey,
+  EthSecp256k1Pubkey,
   isEd25519Pubkey,
+  isEthSecp256k1Pubkey,
   isMultisigThresholdPubkey,
   isSecp256k1Pubkey,
   isSinglePubkey,

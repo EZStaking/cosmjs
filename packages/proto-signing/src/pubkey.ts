@@ -3,6 +3,7 @@ import {
   encodeEd25519Pubkey,
   encodeSecp256k1Pubkey,
   isEd25519Pubkey,
+  isEthSecp256k1Pubkey,
   isMultisigThresholdPubkey,
   isSecp256k1Pubkey,
   MultisigThresholdPubkey,
@@ -39,6 +40,14 @@ export function encodePubkey(pubkey: Pubkey): Any {
       typeUrl: "/cosmos.crypto.ed25519.PubKey",
       value: Uint8Array.from(CosmosCryptoEd25519Pubkey.encode(pubkeyProto).finish()),
     });
+  } else if (isEthSecp256k1Pubkey(pubkey)) {
+    const pubkeyProto = CosmosCryptoSecp256k1Pubkey.fromPartial({
+      key: fromBase64(pubkey.value),
+    });
+    return Any.fromPartial({
+      typeUrl: "/ethermint.crypto.v1.ethsecp256k1.PubKey",
+      value: Uint8Array.from(CosmosCryptoSecp256k1Pubkey.encode(pubkeyProto).finish()),
+    });
   } else if (isMultisigThresholdPubkey(pubkey)) {
     const pubkeyProto = LegacyAminoPubKey.fromPartial({
       threshold: Uint53.fromString(pubkey.value.threshold).toNumber(),
@@ -61,13 +70,14 @@ export function encodePubkey(pubkey: Pubkey): Any {
  */
 export function anyToSinglePubkey(pubkey: Any): SinglePubkey {
   switch (pubkey.typeUrl) {
-    case "/cosmos.crypto.secp256k1.PubKey": {
-      const { key } = CosmosCryptoSecp256k1Pubkey.decode(pubkey.value);
-      return encodeSecp256k1Pubkey(key);
-    }
     case "/cosmos.crypto.ed25519.PubKey": {
       const { key } = CosmosCryptoEd25519Pubkey.decode(pubkey.value);
       return encodeEd25519Pubkey(key);
+    }
+    case "/ethermint.crypto.v1.ethsecp256k1.PubKey":
+    case "/cosmos.crypto.secp256k1.PubKey": {
+      const {key} = CosmosCryptoSecp256k1Pubkey.decode(pubkey.value);
+      return encodeSecp256k1Pubkey(key);
     }
     default:
       throw new Error(`Pubkey type_url ${pubkey.typeUrl} not recognized as single public key type`);
@@ -81,6 +91,7 @@ export function anyToSinglePubkey(pubkey: Any): SinglePubkey {
  */
 export function decodePubkey(pubkey: Any): Pubkey {
   switch (pubkey.typeUrl) {
+    case "/ethermint.crypto.v1.ethsecp256k1.PubKey":
     case "/cosmos.crypto.secp256k1.PubKey":
     case "/cosmos.crypto.ed25519.PubKey": {
       return anyToSinglePubkey(pubkey);
