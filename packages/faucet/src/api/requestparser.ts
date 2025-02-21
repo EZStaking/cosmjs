@@ -1,4 +1,4 @@
-import { isNonNullObject } from "@cosmjs/utils";
+import { isNonNullObject } from "@ezstaking/utils";
 
 import { HttpError } from "./httperror";
 

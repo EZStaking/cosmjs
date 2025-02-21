@@ -1,8 +1,8 @@
-import { coin, coins, makeCosmoshubPath } from "@cosmjs/amino";
-import { toAscii } from "@cosmjs/encoding";
-import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
-import { CometClient, Tendermint34Client } from "@cosmjs/tendermint-rpc";
-import { assert, sleep } from "@cosmjs/utils";
+import { coin, coins, makeCosmoshubPath } from "@ezstaking/amino";
+import { toAscii } from "@ezstaking/encoding";
+import { DirectSecp256k1HdWallet } from "@ezstaking/proto-signing";
+import { CometClient, Tendermint34Client } from "@ezstaking/tendermint-rpc";
+import { assert, sleep } from "@ezstaking/utils";
 import {
   ProposalStatus,
   TextProposal,

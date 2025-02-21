@@ -1,8 +1,8 @@
-# @cosmjs/stream
+# @ezstaking/stream
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/stream.svg)](https://www.npmjs.com/package/@cosmjs/stream)
+[![npm version](https://img.shields.io/npm/v/@ezstaking/stream.svg)](https://www.npmjs.com/package/@ezstaking/stream)
 
-@cosmjs/stream are some helper methods and classes to help with stream
+@ezstaking/stream are some helper methods and classes to help with stream
 processing.
 
 ## License

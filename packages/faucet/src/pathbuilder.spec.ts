@@ -1,5 +1,5 @@
-import { Slip10RawIndex } from "@cosmjs/crypto";
-import { makeCosmoshubPath } from "@cosmjs/proto-signing";
+import { Slip10RawIndex } from "@ezstaking/crypto";
+import { makeCosmoshubPath } from "@ezstaking/proto-signing";
 
 import { makePathBuilder, PathBuilder } from "./pathbuilder";
 

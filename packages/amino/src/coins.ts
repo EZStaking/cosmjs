@@ -1,4 +1,4 @@
-import { Decimal, Uint53 } from "@cosmjs/math";
+import { Decimal, Uint53 } from "@ezstaking/math";
 
 export interface Coin {
   readonly denom: string;
@@ -52,11 +52,11 @@ export function coins(amount: number | string, denom: string): Coin[] {
  * separately in the caller.
  *
  * ```
- * import { parseCoins } from "@cosmjs/proto-signing";
+ * import { parseCoins } from "@ezstaking/proto-signing";
  * // equals
- * import { parseCoins } from "@cosmjs/stargate";
+ * import { parseCoins } from "@ezstaking/stargate";
  * // equals
- * import { parseCoins } from "@cosmjs/amino";
+ * import { parseCoins } from "@ezstaking/amino";
  * ```
  *
  * This function is not made for supporting decimal amounts and does not support

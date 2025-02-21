@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { addCoins } from "@cosmjs/amino";
-import { toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
-import { CometClient, connectComet, HttpEndpoint, toRfc3339WithNanoseconds } from "@cosmjs/tendermint-rpc";
-import { assert, sleep } from "@cosmjs/utils";
+import { addCoins } from "@ezstaking/amino";
+import { toHex } from "@ezstaking/encoding";
+import { Uint53 } from "@ezstaking/math";
+import { CometClient, connectComet, HttpEndpoint, toRfc3339WithNanoseconds } from "@ezstaking/tendermint-rpc";
+import { assert, sleep } from "@ezstaking/utils";
 import { MsgData, TxMsgData } from "cosmjs-types/cosmos/base/abci/v1beta1/abci";
 import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
 import { QueryDelegatorDelegationsResponse } from "cosmjs-types/cosmos/staking/v1beta1/query";
@@ -79,13 +79,13 @@ export interface IndexedTx {
    * If you hash this, you get the transaction hash (= transaction ID):
    *
    * ```js
-   * import { sha256 } from "@cosmjs/crypto";
-   * import { toHex } from "@cosmjs/encoding";
+   * import { sha256 } from "@ezstaking/crypto";
+   * import { toHex } from "@ezstaking/encoding";
    *
    * const transactionId = toHex(sha256(indexTx.tx)).toUpperCase();
    * ```
    *
-   * Use `decodeTxRaw` from @cosmjs/proto-signing to decode this.
+   * Use `decodeTxRaw` from @ezstaking/proto-signing to decode this.
    */
   readonly tx: Uint8Array;
   /**

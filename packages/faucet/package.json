@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/faucet",
+  "name": "@ezstaking/faucet",
   "version": "0.33.0",
   "description": "The faucet",
   "contributors": [
@@ -19,11 +19,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/faucet"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "dev-start": "yarn start-dev",
@@ -41,12 +41,12 @@
     "pack-node": "yarn build-or-skip && webpack --mode production --config webpack.node.config.js"
   },
   "dependencies": {
-    "@cosmjs/crypto": "workspace:^",
-    "@cosmjs/encoding": "workspace:^",
-    "@cosmjs/math": "workspace:^",
-    "@cosmjs/proto-signing": "workspace:^",
-    "@cosmjs/stargate": "workspace:^",
-    "@cosmjs/utils": "workspace:^",
+    "@ezstaking/crypto": "workspace:^",
+    "@ezstaking/encoding": "workspace:^",
+    "@ezstaking/math": "workspace:^",
+    "@ezstaking/proto-signing": "workspace:^",
+    "@ezstaking/stargate": "workspace:^",
+    "@ezstaking/utils": "workspace:^",
     "@koa/cors": "^3.3",
     "koa": "^2.13",
     "koa-bodyparser": "^4.3"

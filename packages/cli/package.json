@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/cli",
+  "name": "@ezstaking/cli",
   "version": "0.33.0",
   "description": "Command line interface",
   "contributors": [
@@ -9,11 +9,11 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/cli"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "format": "prettier --write --loglevel warn \"./src/**/*.ts\"",
@@ -41,16 +41,16 @@
     "!**/testdata/"
   ],
   "dependencies": {
-    "@cosmjs/amino": "workspace:^",
-    "@cosmjs/cosmwasm-stargate": "workspace:^",
-    "@cosmjs/crypto": "workspace:^",
-    "@cosmjs/encoding": "workspace:^",
-    "@cosmjs/faucet-client": "workspace:^",
-    "@cosmjs/math": "workspace:^",
-    "@cosmjs/proto-signing": "workspace:^",
-    "@cosmjs/stargate": "workspace:^",
-    "@cosmjs/tendermint-rpc": "workspace:^",
-    "@cosmjs/utils": "workspace:^",
+    "@ezstaking/amino": "workspace:^",
+    "@ezstaking/cosmwasm-stargate": "workspace:^",
+    "@ezstaking/crypto": "workspace:^",
+    "@ezstaking/encoding": "workspace:^",
+    "@ezstaking/faucet-client": "workspace:^",
+    "@ezstaking/math": "workspace:^",
+    "@ezstaking/proto-signing": "workspace:^",
+    "@ezstaking/stargate": "workspace:^",
+    "@ezstaking/tendermint-rpc": "workspace:^",
+    "@ezstaking/utils": "workspace:^",
     "axios": "^1.6.0",
     "babylon": "^6.18.0",
     "chalk": "^4",

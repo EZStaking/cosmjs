@@ -1,6 +1,6 @@
 /* eslint-disable no-dupe-class-members, @typescript-eslint/ban-types, @typescript-eslint/naming-convention */
-import { CometClient } from "@cosmjs/tendermint-rpc";
-import { assert, isNonNullObject } from "@cosmjs/utils";
+import { CometClient } from "@ezstaking/tendermint-rpc";
+import { assert, isNonNullObject } from "@ezstaking/utils";
 import { ProofOps } from "cosmjs-types/tendermint/crypto/proof";
 
 type QueryExtensionSetup<P> = (base: QueryClient) => P;

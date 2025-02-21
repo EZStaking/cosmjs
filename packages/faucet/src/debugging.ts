@@ -1,4 +1,4 @@
-import { Coin } from "@cosmjs/stargate";
+import { Coin } from "@ezstaking/stargate";
 
 import { MinimalAccount, SendJob } from "./types";
 

@@ -1,5 +1,5 @@
-import { fromUtf8, toUtf8 } from "@cosmjs/encoding";
-import { createPagination, createProtobufRpcClient, QueryClient } from "@cosmjs/stargate";
+import { fromUtf8, toUtf8 } from "@ezstaking/encoding";
+import { createPagination, createProtobufRpcClient, QueryClient } from "@ezstaking/stargate";
 import {
   QueryAllContractStateResponse,
   QueryClientImpl,

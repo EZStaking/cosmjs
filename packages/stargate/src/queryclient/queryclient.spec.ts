@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { coin } from "@cosmjs/amino";
-import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
-import { CometClient, Tendermint34Client } from "@cosmjs/tendermint-rpc";
-import { assert } from "@cosmjs/utils";
+import { coin } from "@ezstaking/amino";
+import { DirectSecp256k1HdWallet } from "@ezstaking/proto-signing";
+import { CometClient, Tendermint34Client } from "@ezstaking/tendermint-rpc";
+import { assert } from "@ezstaking/utils";
 import {
   QueryAllBalancesRequest,
   QueryAllBalancesResponse,

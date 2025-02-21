@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/encoding",
+  "name": "@ezstaking/encoding",
   "version": "0.33.0",
   "description": "Encoding helpers for blockchain projects",
   "contributors": [
@@ -16,11 +16,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/encoding"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "docs": "typedoc --options typedoc.js",

@@ -1,4 +1,4 @@
-import { EncodeObject, GeneratedType } from "@cosmjs/proto-signing";
+import { EncodeObject, GeneratedType } from "@ezstaking/proto-signing";
 import {
   MsgFundCommunityPool,
   MsgSetWithdrawAddress,

@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/amino",
+  "name": "@ezstaking/amino",
   "version": "0.33.0",
   "description": "Helpers for Amino based signing.",
   "contributors": [
@@ -16,11 +16,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/amino"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "docs": "typedoc --options typedoc.js",
@@ -40,10 +40,10 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.web.config.js"
   },
   "dependencies": {
-    "@cosmjs/crypto": "workspace:^",
-    "@cosmjs/encoding": "workspace:^",
-    "@cosmjs/math": "workspace:^",
-    "@cosmjs/utils": "workspace:^"
+    "@ezstaking/crypto": "workspace:^",
+    "@ezstaking/encoding": "workspace:^",
+    "@ezstaking/math": "workspace:^",
+    "@ezstaking/utils": "workspace:^"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",

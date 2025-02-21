@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/proto-signing",
+  "name": "@ezstaking/proto-signing",
   "version": "0.33.0",
   "description": "Utilities for protobuf based signing (Cosmos SDK 0.40+)",
   "contributors": [
@@ -17,11 +17,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/proto-signing"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "docs": "typedoc --options typedoc.js",
@@ -39,11 +39,11 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.web.config.js"
   },
   "dependencies": {
-    "@cosmjs/amino": "workspace:^",
-    "@cosmjs/crypto": "workspace:^",
-    "@cosmjs/encoding": "workspace:^",
-    "@cosmjs/math": "workspace:^",
-    "@cosmjs/utils": "workspace:^",
+    "@ezstaking/amino": "workspace:^",
+    "@ezstaking/crypto": "workspace:^",
+    "@ezstaking/encoding": "workspace:^",
+    "@ezstaking/math": "workspace:^",
+    "@ezstaking/utils": "workspace:^",
     "cosmjs-types": "^0.9.0"
   },
   "devDependencies": {

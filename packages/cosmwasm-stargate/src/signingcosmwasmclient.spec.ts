@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Secp256k1HdWallet } from "@cosmjs/amino";
-import { Random, sha256 } from "@cosmjs/crypto";
-import { toHex, toUtf8 } from "@cosmjs/encoding";
-import { decodeTxRaw, DirectSecp256k1HdWallet, Registry } from "@cosmjs/proto-signing";
+import { Secp256k1HdWallet } from "@ezstaking/amino";
+import { Random, sha256 } from "@ezstaking/crypto";
+import { toHex, toUtf8 } from "@ezstaking/encoding";
+import { decodeTxRaw, DirectSecp256k1HdWallet, Registry } from "@ezstaking/proto-signing";
 import {
   AminoMsgDelegate,
   AminoTypes,
@@ -12,8 +12,8 @@ import {
   createStakingAminoConverters,
   MsgDelegateEncodeObject,
   MsgSendEncodeObject,
-} from "@cosmjs/stargate";
-import { assert, sleep } from "@cosmjs/utils";
+} from "@ezstaking/stargate";
+import { assert, sleep } from "@ezstaking/utils";
 import { DeepPartial } from "cosmjs-types";
 import { BinaryWriter } from "cosmjs-types/binary";
 import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";

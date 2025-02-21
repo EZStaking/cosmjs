@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toAscii, toHex } from "@cosmjs/encoding";
-import { firstEvent, toListPromise } from "@cosmjs/stream";
-import { assert, sleep } from "@cosmjs/utils";
+import { toAscii, toHex } from "@ezstaking/encoding";
+import { firstEvent, toListPromise } from "@ezstaking/stream";
+import { assert, sleep } from "@ezstaking/utils";
 import { ReadonlyDate } from "readonly-date";
 import { Stream } from "xstream";
 

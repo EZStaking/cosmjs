@@ -1,6 +1,6 @@
-# @cosmjs/math
+# @ezstaking/math
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/math.svg)](https://www.npmjs.com/package/@cosmjs/math)
+[![npm version](https://img.shields.io/npm/v/@ezstaking/math.svg)](https://www.npmjs.com/package/@ezstaking/math)
 
 ## License
 

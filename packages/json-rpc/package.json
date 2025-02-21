@@ -1,5 +1,5 @@
 {
-  "name": "@cosmjs/json-rpc",
+  "name": "@ezstaking/json-rpc",
   "version": "0.33.0",
   "description": "Framework for implementing a JSON-RPC 2.0 API",
   "contributors": [
@@ -18,11 +18,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/json-rpc"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "docs": "typedoc --options typedoc.js",
@@ -42,7 +42,7 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.web.config.js"
   },
   "dependencies": {
-    "@cosmjs/stream": "workspace:^",
+    "@ezstaking/stream": "workspace:^",
     "xstream": "^11.14.0"
   },
   "devDependencies": {

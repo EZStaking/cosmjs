@@ -138,8 +138,8 @@ export {
   StargateClientOptions,
   TimeoutError,
 } from "./stargateclient";
-export { StdFee } from "@cosmjs/amino";
-export { Coin, coin, coins, makeCosmoshubPath, parseCoins } from "@cosmjs/proto-signing";
+export { StdFee } from "@ezstaking/amino";
+export { Coin, coin, coins, makeCosmoshubPath, parseCoins } from "@ezstaking/proto-signing";
 
 // Re-exported because this is part of the StargateClient/SigningStargateClient APIs
-export { HttpEndpoint } from "@cosmjs/tendermint-rpc";
+export { HttpEndpoint } from "@ezstaking/tendermint-rpc";

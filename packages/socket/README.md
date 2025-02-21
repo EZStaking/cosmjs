@@ -1,8 +1,8 @@
-# @cosmjs/socket
+# @ezstaking/socket
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/socket.svg)](https://www.npmjs.com/package/@cosmjs/socket)
+[![npm version](https://img.shields.io/npm/v/@ezstaking/socket.svg)](https://www.npmjs.com/package/@ezstaking/socket)
 
-@cosmjs/socket is a collection of helper methods and classes for working with
+@ezstaking/socket is a collection of helper methods and classes for working with
 WebSockets.
 
 ## License

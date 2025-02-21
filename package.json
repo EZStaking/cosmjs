@@ -2,6 +2,7 @@
   "name": "cosmjs-monorepo-root",
   "description": "Transaction codec and client to communicate with any wasmd blockchain",
   "private": true,
+  "version": "0.33.0",
   "author": "Ethan Frey <ethanfrey@users.noreply.github.com>",
   "license": "Apache-2.0",
   "main": "build/index.js",
@@ -14,11 +15,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs"
+    "url": "git+https://github.com/ezstaking/cosmjs.git#own-main"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "workspaces": [
     "packages/*"
@@ -36,19 +37,32 @@
     "build": "yarn workspaces foreach --all --topological-dev --parallel --verbose run build",
     "docs": "yarn workspaces foreach --all --topological-dev --parallel --verbose run docs",
     "pack-web": "yarn workspaces foreach --all --topological-dev --parallel --verbose run pack-web",
+    "release": "release-git",
     "publish-next": "yarn workspaces foreach --all --no-private exec yarn npm publish --tag next",
     "publish-latest": "yarn workspaces foreach --all --no-private exec yarn npm publish"
   },
   "devDependencies": {
-    "@cosmjs/amino": "workspace:^",
-    "@cosmjs/cosmwasm-stargate": "workspace:^",
-    "@cosmjs/crypto": "workspace:^",
-    "@cosmjs/encoding": "workspace:^",
-    "@cosmjs/proto-signing": "workspace:^",
-    "@cosmjs/stargate": "workspace:^",
+    "@ezstaking/amino": "workspace:^",
+    "@ezstaking/cosmwasm-stargate": "workspace:^",
+    "@ezstaking/crypto": "workspace:^",
+    "@ezstaking/encoding": "workspace:^",
+    "@ezstaking/proto-signing": "workspace:^",
+    "@ezstaking/stargate": "workspace:^",
+    "@release-git-plugins/workspaces": "^3.2.0",
     "eslint": "^7.5",
     "prettier": "^2.8.8",
+    "release-git": "^16.1.0",
     "typescript": "~4.9"
+  },
+  "release-git": {
+    "plugins": {
+      "@release-git-plugins/workspaces": {
+        "workspaces": [
+          "packages/*"
+        ]
+      }
+    },
+    "npm": false
   },
   "packageManager": "yarn@4.6.0"
 }

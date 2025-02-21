@@ -1,6 +1,6 @@
-import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
-import { arrayContentStartsWith } from "@cosmjs/utils";
+import { fromBase64, fromBech32, fromHex, toBase64, toBech32, toHex } from "@ezstaking/encoding";
+import { Uint53 } from "@ezstaking/math";
+import { arrayContentStartsWith } from "@ezstaking/utils";
 
 import {
   Ed25519Pubkey,

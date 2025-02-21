@@ -1,8 +1,8 @@
-# @cosmjs/amino
+# @ezstaking/amino
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/amino.svg)](https://www.npmjs.com/package/@cosmjs/amino)
+[![npm version](https://img.shields.io/npm/v/@ezstaking/amino.svg)](https://www.npmjs.com/package/@ezstaking/amino)
 
-Helpers for Amino for @cosmjs/stargate.
+Helpers for Amino for @ezstaking/stargate.
 
 ## License
 

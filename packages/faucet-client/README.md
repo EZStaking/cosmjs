@@ -1,6 +1,6 @@
-# @cosmjs/faucet-client
+# @ezstaking/faucet-client
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/faucet-client.svg)](https://www.npmjs.com/package/@cosmjs/faucet-client)
+[![npm version](https://img.shields.io/npm/v/@ezstaking/faucet-client.svg)](https://www.npmjs.com/package/@ezstaking/faucet-client)
 
 ## Running the tests
 

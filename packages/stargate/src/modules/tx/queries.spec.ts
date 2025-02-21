@@ -1,6 +1,6 @@
-import { coin, coins, DirectSecp256k1HdWallet, Registry } from "@cosmjs/proto-signing";
-import { CometClient, Tendermint34Client } from "@cosmjs/tendermint-rpc";
-import { assertDefined, sleep } from "@cosmjs/utils";
+import { coin, coins, DirectSecp256k1HdWallet, Registry } from "@ezstaking/proto-signing";
+import { CometClient, Tendermint34Client } from "@ezstaking/tendermint-rpc";
+import { assertDefined, sleep } from "@ezstaking/utils";
 import { MsgDelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
 
 import { QueryClient } from "../../queryclient";
